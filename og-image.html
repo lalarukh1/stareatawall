@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@700&display=swap');
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #1a0a00;
+    font-family: 'Caveat', cursive;
+    position: relative;
+  }
+
+  .wall {
+    width: 100%;
+    height: 100%;
+    background-image: url('wall.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+  }
+
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+  }
+
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 96px;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+    margin-bottom: 24px;
+  }
+
+  .sub {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    color: rgba(255,255,255,0.88);
+    max-width: 800px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin-bottom: 36px;
+  }
+
+  .tag {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.4);
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+  }
+
+  /* sticky notes decoration */
+  .note {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+    line-height: 1.3;
+  }
+  .n1 { background: #FFF9C4; transform: rotate(-8deg); top: 40px; left: 60px; color: #333; }
+  .n2 { background: #F8BBD0; transform: rotate(5deg); top: 30px; right: 80px; color: #333; }
+  .n3 { background: #B3E5FC; transform: rotate(-3deg); bottom: 60px; left: 100px; color: #333; }
+  .n4 { background: #C8E6C9; transform: rotate(7deg); bottom: 50px; right: 60px; color: #333; }
+  .n5 { background: #FFE0B2; transform: rotate(-5deg); top: 200px; left: 30px; color: #333; }
+  .n6 { background: #E1BEE7; transform: rotate(4deg); top: 180px; right: 30px; color: #333; }
+
+  .tape {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 18px;
+    background: rgba(255,255,220,0.55);
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="wall">
+    <div class="overlay"></div>
+
+    <div class="note n1"><div class="tape"></div>called mates on the landline 📞</div>
+    <div class="note n2"><div class="tape"></div>built dens from sofa cushions 🛋️</div>
+    <div class="note n3"><div class="tape"></div>read the cereal box. twice. 🥣</div>
+    <div class="note n4"><div class="tape"></div>played out till dark 🌙</div>
+    <div class="note n5"><div class="tape"></div>made friendship bracelets 🧶</div>
+    <div class="note n6"><div class="tape"></div>kept a diary with a lock 📓</div>
+
+    <div class="content">
+      <h1>stare at a wall.</h1>
+      <p class="sub">what UK kids used to do before smartphones.<br>and what Gen Alpha can do now.</p>
+      <span class="tag">stareatawall.org</span>
+    </div>
+  </div>
+</body>
+</html>
