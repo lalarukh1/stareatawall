@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ===== PRIMARY SEO ===== -->
+  <title>Stare at a Wall — What to Do When Social Media is Banned | UK Under-16s</title>
+  <meta name="description" content="Isabella said it best. Born from a viral BBC interview — a site for UK under-16s facing the social media ban. What did kids do before smartphones? Loads, actually." />
+  <meta name="keywords" content="stare at a wall, uk social media ban, under 16 social media ban uk, uk pupils social media banned, things to do without social media, social media ban 2026, isabella tarleton academy, bbc social media ban interview, activities for teens without phones, what kids did before smartphones, uk children social media ban, social media free activities uk, stareatawall" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="stareatawall.org" />
+  <link rel="canonical" href="https://stareatawall.org/" />
+  <meta name="theme-color" content="#7B1010" />
+
+  <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stareatawall.org/" />
+  <meta property="og:title" content="Stare at a Wall — What to Do When Social Media is Banned" />
+  <meta property="og:description" content="BBC Reporter asked what she'd do with 9 hours of screen time gone. Isabella said: 'Stare at a wall.' This is that website. For UK under-16s. Actually useful." />
+  <meta property="og:image" content="https://stareatawall.org/wall.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Stare at a Wall" />
+
+  <!-- ===== TWITTER / X CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://stareatawall.org/" />
+  <meta name="twitter:title" content="Stare at a Wall — What to Do When Social Media is Banned" />
+  <meta name="twitter:description" content="BBC Reporter: 'What are you going to do with all that time?' Isabella: 'Stare at a wall.' This is that website. For UK under-16s." />
+  <meta name="twitter:image" content="https://stareatawall.org/wall.png" />
+
+  <!-- ===== STRUCTURED DATA (Google rich results) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Stare at a Wall",
+    "url": "https://stareatawall.org",
+    "description": "A website for UK under-16s following the social media ban. What did kids do before smartphones? Find out here.",
+    "inLanguage": "en-GB",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Stare at a Wall",
+      "url": "https://stareatawall.org",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello.stareatawall@outlook.com",
+        "contactType": "customer support"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://stareatawall.org/",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the UK social media ban for under-16s?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The UK government announced in June 2026 that social media will be banned for under-16s, including platforms like TikTok, Instagram, Snapchat, YouTube and X. The ban is due to take effect in spring 2027."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What did Isabella say on the BBC about the social media ban?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Isabella, a pupil at Tarleton Academy in Preston, was asked by a BBC reporter what she would do with the time freed up by the social media ban. She replied: 'Stare at a wall.' The clip went viral."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can under-16s do instead of social media?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Loads. Kids before smartphones made mixtapes, built dens, played street football, kept diaries, made perfume out of rose petals, called mates on the landline, and stood in the rain. This website has the full list."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== PERFORMANCE ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Reenie+Beanie&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Caveat', cursive;
+      overflow-x: hidden;
+    }
+
+    /* ===== BRICK WALL ===== */
+    .wall {
+      position: relative;
+      min-height: 100vh;
+      padding: 60px 20px 120px;
+      /* SVG brick pattern, real looking wall */
+      background-image: url('wall.png');
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+
+    /* dark overlay to improve readability */
+    .wall::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.18);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ===== WALL CONTENT LAYER ===== */
+    .wall-content {
+      position: relative;
+      z-index: 10;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.35);
+      border-radius: 4px;
+      padding: 20px 40px 40px;
+      backdrop-filter: blur(1px);
+    }
+
+    /* ensure all content sits above dark overlay */
+    .graffiti-zone, .section-block, .baseboard,
+    .write-on-wall, .torn-paper, .scroll-hint { position: relative; z-index: 10; }
+
+    /* ===== GRAFFITI HEADER ===== */
+    .graffiti-zone {
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: relative;
+    }
+
+    .graffiti-main {
+      font-family: 'Permanent Marker', cursive;
+      font-size: clamp(3rem, 10vw, 8rem);
+      color: #F5E642;
+      text-shadow:
+        4px 4px 0 #B8A800,
+        -2px -2px 0 #333,
+        2px -2px 0 #333,
+        -2px 2px 0 #333,
+        6px 8px 20px rgba(0,0,0,0.5);
+      transform: rotate(-2deg);
+      display: inline-block;
+      line-height: 1.1;
+      letter-spacing: -2px;
+    }
+
+    .graffiti-sub {
+      display: block;
+      font-family: 'Caveat', cursive;
+      font-size: clamp(1.2rem, 3vw, 2.2rem);
+      color: #fff;
+      margin-top: 12px;
+      transform: rotate(1deg);
+      text-shadow: 0 0 8px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9), -1px -1px 4px rgba(0,0,0,0.9);
+    }
+
+    .interview-quote {
+      display: inline-block;
+      background: #fffde7;
+      color: #333;
+      font-family: 'Patrick Hand', cursive;
+      font-size: clamp(0.9rem, 2vw, 1.2rem);
+      padding: 24px 28px;
+      margin-top: 30px;
+      transform: rotate(-1deg);
+      max-width: 600px;
+      line-height: 1.6;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+      clip-path: polygon(
+        0% 4%, 3% 0%, 7% 3%, 12% 0%, 18% 2%, 24% 0%,
+        30% 3%, 36% 0%, 42% 2%, 48% 0%, 54% 3%, 60% 0%,
+        66% 2%, 72% 0%, 78% 3%, 84% 0%, 90% 2%, 96% 0%, 100% 3%,
+        100% 97%, 97% 100%, 92% 97%, 86% 100%, 80% 97%, 74% 100%,
+        68% 97%, 62% 100%, 56% 97%, 50% 100%, 44% 97%, 38% 100%,
+        32% 97%, 26% 100%, 20% 97%, 14% 100%, 8% 97%, 2% 100%, 0% 97%
+      );
+    }
+
+    .interview-quote em {
+      color: #7B0000;
+      font-style: normal;
+      font-size: 1.3em;
+      font-weight: 700;
+    }
+
+    /* ===== SCRAWLED SECTION LABELS ===== */
+    .wall-label {
+      font-family: 'Permanent Marker', cursive;
+      font-size: clamp(1.4rem, 4vw, 2.5rem);
+      color: #fff;
+      transform: rotate(-1.5deg);
+      display: inline-block;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.8);
+      margin-bottom: 20px;
+    }
+
+    /* ===== STICKY NOTES ===== */
+    .notes-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 20px 0 40px;
+      align-items: flex-start;
+    }
+
+    .note {
+      position: relative;
+      width: 200px;
+      min-height: 175px;
+      padding: 30px 18px 18px;
+      font-family: 'Caveat', cursive;
+      font-size: 1.05rem;
+      line-height: 1.4;
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(.17,.67,.55,1.3), box-shadow 0.25s ease;
+      transform-origin: top center;
+      border-radius: 2px 2px 8px 2px;
+      box-shadow: 3px 3px 12px rgba(0,0,0,0.35);
+    }
+
+    /* tape at top */
+    .note::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 22px;
+      background: rgba(255,255,255,0.45);
+      border-radius: 2px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    /* peel corner */
+    .note::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 22px 22px;
+      transition: border-width 0.2s ease;
+    }
+
+    .note:hover {
+      transform: rotate(0deg) scale(1.08) translateY(-8px);
+      box-shadow: 8px 12px 30px rgba(0,0,0,0.45);
+      z-index: 100;
+    }
+
+    .note:hover::after { border-width: 0 0 32px 32px; }
+
+    /* note colours */
+    .note.yellow  { background: #FFF176; color: #333; }
+    .note.yellow::after  { border-color: transparent transparent #e6d800 transparent; }
+    .note.pink    { background: #F48FB1; color: #2d0010; }
+    .note.pink::after    { border-color: transparent transparent #b5537c transparent; }
+    .note.green   { background: #A5D6A7; color: #1a2e1a; }
+    .note.green::after   { border-color: transparent transparent #5fa862 transparent; }
+    .note.blue    { background: #90CAF9; color: #0d1f3c; }
+    .note.blue::after    { border-color: transparent transparent #4a8fd4 transparent; }
+    .note.orange  { background: #FFCC80; color: #3d1c00; }
+    .note.orange::after  { border-color: transparent transparent #d48000 transparent; }
+    .note.purple  { background: #CE93D8; color: #1a0028; }
+    .note.purple::after  { border-color: transparent transparent #9c3fb5 transparent; }
+
+    /* random rotations */
+    .note:nth-child(6n+1) { transform: rotate(-3deg); }
+    .note:nth-child(6n+2) { transform: rotate(2deg); }
+    .note:nth-child(6n+3) { transform: rotate(-1.5deg); }
+    .note:nth-child(6n+4) { transform: rotate(3.5deg); }
+    .note:nth-child(6n+5) { transform: rotate(-2.5deg); }
+    .note:nth-child(6n+6) { transform: rotate(1deg); }
+
+    .note:nth-child(6n+1):hover,
+    .note:nth-child(6n+2):hover,
+    .note:nth-child(6n+3):hover,
+    .note:nth-child(6n+4):hover,
+    .note:nth-child(6n+5):hover,
+    .note:nth-child(6n+6):hover { transform: rotate(0deg) scale(1.08) translateY(-8px); }
+
+    .note-emoji {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .note-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ===== GRAFFITI SCRAWLS ON THE WALL ===== */
+    .scrawl {
+      font-family: 'Reenie Beanie', cursive;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      color: #fff;
+      text-shadow: 1px 1px 0 rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.9);
+      position: relative;
+      pointer-events: none;
+      margin: 10px 0;
+    }
+
+    /* ===== SECTION DIVIDERS ===== */
+    .section-block {
+      padding: 40px 0;
+      position: relative;
+    }
+
+    .section-block + .section-block::before {
+      content: '';
+      display: block;
+      height: 3px;
+      background: repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 10px, transparent 10px, transparent 20px);
+      margin-bottom: 40px;
+    }
+
+
+    .wall-input-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .wall-input-row .wall-input {
+      transform: none;
+    }
+
+    .wall-input {
+      flex: 1;
+      min-width: 200px;
+      background: #FFF176;
+      border: none;
+      padding: 12px 16px;
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      color: #333;
+      border-radius: 2px;
+      outline: none;
+      transform: rotate(-1deg);
+      transition: transform 0.2s;
+    }
+
+    .wall-input:focus { transform: rotate(0deg) scale(1.02); }
+    .wall-input::placeholder { color: #999; }
+
+    .wall-btn {
+      background: #F5E642;
+      border: none;
+      padding: 12px 22px;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1.1rem;
+      color: #333;
+      cursor: pointer;
+      border-radius: 2px;
+      box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+      transition: transform 0.15s, box-shadow 0.15s;
+      transform: rotate(1deg);
+    }
+
+    .wall-btn:hover {
+      transform: rotate(0deg) scale(1.05);
+      box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+    }
+
+    .wall-btn:active {
+      transform: scale(0.97);
+      box-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    }
+
+    /* submitted notes area */
+    .submitted-notes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .submitted-note {
+      animation: noteDropIn 0.4s cubic-bezier(.17,.67,.55,1.3) both;
+    }
+
+    @keyframes noteDropIn {
+      from { opacity: 0; transform: translateY(-40px) rotate(-8deg) scale(0.7); }
+      to   { opacity: 1; }
+    }
+
+    /* ===== TABS ===== */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 10px;
+    }
+
+    .tab {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1rem;
+      padding: 10px 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px;
+      transform: rotate(-1deg);
+      box-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+      transition: transform 0.15s, box-shadow 0.15s;
+      background: #fffde7;
+      color: #333;
+    }
+
+    .tab:nth-child(2) { transform: rotate(1.5deg); background: #F48FB1; }
+    .tab:nth-child(3) { transform: rotate(-0.5deg); background: #90CAF9; }
+    .tab:nth-child(4) { transform: rotate(2deg); background: #A5D6A7; }
+
+    .tab:hover {
+      transform: rotate(0deg) scale(1.05) translateY(-3px);
+      box-shadow: 5px 5px 0 rgba(0,0,0,0.4);
+    }
+
+    .tab.active {
+      transform: rotate(0deg) scale(1.08) translateY(-4px);
+      box-shadow: 0 0 0 3px #333, 4px 4px 0 #333;
+      outline: none;
+      font-size: 1.1rem;
+      filter: brightness(1.1);
+      z-index: 10;
+      position: relative;
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ===== NOTE MODAL ===== */
+    .note-modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.65);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .note-modal-overlay.open {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .note-modal {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 36px 32px;
+      font-family: 'Caveat', cursive;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      border-radius: 2px 2px 12px 2px;
+      box-shadow: 8px 12px 40px rgba(0,0,0,0.6);
+      animation: noteExpand 0.25s cubic-bezier(.17,.67,.55,1.3);
+    }
+
+    @keyframes noteExpand {
+      from { transform: scale(0.7) rotate(-6deg); opacity: 0; }
+      to   { transform: scale(1) rotate(-1deg); opacity: 1; }
+    }
+
+    .note-modal::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 26px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .note-modal-emoji { font-size: 3rem; display: block; margin-bottom: 10px; }
+    .note-modal-title { font-family: 'Permanent Marker', cursive; font-size: 1.8rem; display: block; margin-bottom: 14px; }
+    .note-modal-body { font-size: 1.45rem; }
+    .note-modal-close {
+      position: absolute;
+      top: 10px; right: 14px;
+      background: none; border: none;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: rgba(0,0,0,0.4);
+      line-height: 1;
+    }
+    .note-modal-close:hover { color: rgba(0,0,0,0.8); }
+
+    .note .tap-hint {
+      position: absolute;
+      bottom: 6px;
+      right: 10px;
+      font-size: 0.7rem;
+      color: rgba(0,0,0,0.3);
+      font-family: 'Patrick Hand', cursive;
+    }
+
+    /* ===== FLOOR SCRAWL ===== */
+    .baseboard {
+      text-align: center;
+      padding: 60px 20px 40px;
+      font-family: 'Reenie Beanie', cursive;
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 2px;
+    }
+
+    .fadein { opacity: 1; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      .wall { padding: 30px 12px 80px; }
+      .wall-content { padding: 16px 16px 30px; }
+
+      .graffiti-zone { padding: 20px 8px 10px; }
+
+      .interview-quote { padding: 18px 16px; font-size: 0.95rem; }
+
+      .wall-label { font-size: 1.3rem; }
+
+      .notes-cluster {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 16px 0 24px;
+      }
+      .note {
+        width: 100%;
+        min-height: 140px;
+        font-size: 0.95rem;
+      }
+
+      .tabs { gap: 8px; }
+      .tab { font-size: 0.85rem; padding: 8px 12px; }
+
+      .wall-input-row {
+        flex-wrap: wrap;
+      }
+      .wall-input { min-width: 0; font-size: 1rem; }
+      #nameInput { max-width: 100% !important; }
+      .wall-btn { width: 100%; }
+
+      .note-modal { padding: 30px 20px 24px; }
+      .note-modal-body { font-size: 1.2rem; }
+      .note-modal-title { font-size: 1.4rem; }
+
+      .submitted-notes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .submitted-notes .note { width: 100%; }
+    }
+
+    @media (max-width: 420px) {
+      .notes-cluster { grid-template-columns: 1fr; }
+      .submitted-notes { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 700px) {
+      .wall-scrawl { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wall">
+  <div class="wall-content">
+
+    <!-- ===== HERO ===== -->
+    <div class="graffiti-zone">
+      <h1 class="graffiti-main">stare at a wall.</h1>
+      <span class="graffiti-sub">a website for when social media is banned and you have absolutely nothing to do</span>
+
+      <div style="display:flex; justify-content:center; margin-top:30px;">
+        <blockquote class="interview-quote">
+          BBC Reporter: "You said your screen time over the weekend can be up to nine hours, what are you going to do with all that time?"<br><br>
+          Isabella, Tarleton Academy, Preston: <em>"Stare at a wall."</em><br>
+          <small style="opacity:0.6; font-size:0.85em;">, BBC News interview, following the UK under-16s social media ban announcement</small>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <!-- ===== BEFORE PHONES, TABBED ===== -->
+    <div class="section-block fadein">
+      <span class="wall-label">// what kids used to do before smartphones</span>
+      <div class="scrawl">(before the rectangle took over)</div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="home">🏠 at home</button>
+        <button class="tab" data-tab="mates">👫 with mates</button>
+        <button class="tab" data-tab="outside">🏃 outside</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="home"><div class="notes-cluster" id="notes-home"></div></div>
+      <div class="tab-panel" data-panel="outside"><div class="notes-cluster" id="notes-outside"></div></div>
+      <div class="tab-panel" data-panel="mates"><div class="notes-cluster" id="notes-mates"></div></div>
+    </div>
+
+
+    <!-- ===== VOICE OF THIS GENERATION ===== -->
+    <div class="section-block fadein" style="padding-top:10px;">
+      <div style="margin-top:-30px;">
+        <blockquote class="interview-quote" style="transform:rotate(1deg); display:block; width:100%; max-width:100%; box-sizing:border-box; padding-top:32px; padding-bottom:32px;">
+          <strong style="font-size:1.15em; display:block; margin-bottom:12px;">calling all Gen Alpha</strong>what's the voice of your generation?<br><br>
+          banned or not, your voice matters. this wall is yours. stick something on it. what you're thinking, what you're feeling, something you love doing, something you want the world to know. just say it.<br><br>
+          <em>stick your note on the wall. let the world hear it.</em><br>
+          <br>
+          <div id="noteForm" class="wall-input-row" style="margin-top:8px;">
+            <input class="wall-input" id="noteInput" type="text" maxlength="80" placeholder="I started drawing random stuff..." />
+            <input class="wall-input" id="nameInput" type="text" maxlength="30" style="max-width:180px; margin:0;" placeholder="your name" />
+            <button class="wall-btn" onclick="addNote()">STICK IT</button>
+          </div>
+          <div id="editMsg" style="display:none; margin-top:8px; font-family:'Patrick Hand',cursive; font-size:1rem; color:#555;">
+            your note is on the wall. <button onclick="toggleEdit()" style="background:none; border:none; font-family:'Patrick Hand',cursive; font-size:1rem; color:#7B0000; cursor:pointer; text-decoration:underline; padding:0;">edit your note</button>
+            <div id="editArea" class="wall-input-row" style="display:none; margin-top:8px;">
+              <input class="wall-input" id="editNoteInput" type="text" maxlength="80" />
+              <input class="wall-input" id="editNameInput" type="text" maxlength="30" style="max-width:180px; margin:0;" />
+              <button class="wall-btn" onclick="saveEdit()">SAVE</button>
+            </div>
+          </div>
+          <div class="submitted-notes" id="submittedNotes"></div>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <div class="section-block fadein" style="text-align:center; padding: 20px 0 10px;">
+      <p style="font-family:'Patrick Hand', cursive; color:rgba(255,255,255,0.85); font-size:1.25rem; line-height:2; max-width:700px; margin:0 auto;">
+        got an activity to add? an idea for something we could build for pupils?<br>
+        feedback, suggestions, or just want to get in touch.<br>
+        we read everything, respond quickly, and genuinely want to work with you on this.<br><br>
+        <a href="mailto:hello.stareatawall@outlook.com" style="color:#fffde7; font-weight:bold; text-decoration:underline; font-size:1.6rem;">hello.stareatawall@outlook.com</a>
+      </p>
+    </div>
+
+    <!-- ===== BASEBOARD ===== -->
+    <div class="baseboard">
+      stareatawall.org
+    </div>
+
+  </div><!-- /wall-content -->
+</div><!-- /wall -->
+
+<!-- NOTE EXPAND MODAL — outside wall to avoid stacking context -->
+<div class="note-modal-overlay" id="noteModal">
+  <div class="note-modal" id="noteModalCard">
+    <button class="note-modal-close" onclick="closeModal()">✕</button>
+    <span class="note-modal-emoji" id="modalEmoji"></span>
+    <span class="note-modal-title" id="modalTitle"></span>
+    <div class="note-modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+  // ===== FADE IN ON SCROLL =====
+  const fadeEls = document.querySelectorAll('.fadein');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // ===== ADD NOTE =====
+  const colours = ['yellow','pink','green','blue','orange','purple'];
+  const defaultNotes = [
+    { text: 'You can express yourself by posting videos or just relating with other people. I don\'t think it\'s the biggest waste of time if you spread it out evenly with other priorities.', name: 'Elizabeth, 17', nameUrl: 'https://www.aol.com/articles/british-teens-resist-australian-style-070325584.html' },
+    { text: 'Restrictions could push young people towards platforms where there\'s more dangerous things.', name: 'Dua, 16', nameUrl: 'https://www.aol.com/articles/british-teens-resist-australian-style-070325584.html' },
+    { text: 'been using AI to build games and its actually become my thing now. dont even miss my phone when im doing it', name: 'Tyler, 15' }
+  ];
+
+  let myNoteId = localStorage.getItem('myNoteId') || null;
+  let myNote = JSON.parse(localStorage.getItem('myNote') || 'null');
+  let myNoteEl = null;
+
+  function renderNote(item, isMine = false) {
+    const text = typeof item === 'string' ? item : item.text;
+    const name = typeof item === 'string' ? '' : (item.name || '');
+    const colour = colours[Math.floor(Math.random() * colours.length)];
+    const div = document.createElement('div');
+    div.className = `note ${colour} submitted-note`;
+    div.style.width = '160px';
+    div.style.minHeight = '100px';
+    div.style.fontSize = '1.2rem';
+    div.style.cursor = 'pointer';
+    const preview = text.length > 60 ? text.slice(0, 60).trimEnd() + '…' : text;
+    const nameHtml = name ? (item.nameUrl ? `<a href="${item.nameUrl}" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">${name}</a>` : name) : '';
+    div.innerHTML = `<span>${preview}</span>${name ? `<br><small style="opacity:0.6; font-size:0.85em; margin-top:8px; display:block;">— ${nameHtml}</small>` : ''}`;
+    div.addEventListener('click', () => {
+      openModal({ emoji: '📝', title: name || '', body: text }, div.className);
+    });
+    document.getElementById('submittedNotes').appendChild(div);
+    if (isMine) myNoteEl = div;
+    return div;
+  }
+
+  function updateForm() {
+    const form = document.getElementById('noteForm');
+    const editMsg = document.getElementById('editMsg');
+    if (myNoteId && myNote) {
+      form.style.display = 'none';
+      editMsg.style.display = 'block';
+      document.getElementById('editNoteInput').value = myNote.text;
+      document.getElementById('editNameInput').value = myNote.name || '';
+    } else {
+      form.style.display = 'flex';
+      editMsg.style.display = 'none';
+    }
+  }
+
+  async function loadNotes() {
+    defaultNotes.forEach(n => renderNote(n));
+    try {
+      const res = await fetch('/api/notes');
+      const notes = await res.json();
+      notes.forEach(n => {
+        const isMine = n.id === myNoteId;
+        renderNote(n, isMine);
+      });
+    } catch {}
+    updateForm();
+  }
+
+  loadNotes();
+
+  async function addNote() {
+    const input = document.getElementById('noteInput');
+    const nameEl = document.getElementById('nameInput');
+    const text = input.value.trim();
+    if (!text) return;
+    const id = crypto.randomUUID();
+    const note = { text, name: nameEl.value.trim() };
+    myNoteId = id;
+    myNote = note;
+    localStorage.setItem('myNoteId', id);
+    localStorage.setItem('myNote', JSON.stringify(note));
+    renderNote(note, true);
+    updateForm();
+    fetch('/api/notes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, ...note }),
+    });
+  }
+
+  async function saveEdit() {
+    const text = document.getElementById('editNoteInput').value.trim();
+    if (!text) return;
+    myNote = { text, name: document.getElementById('editNameInput').value.trim() };
+    localStorage.setItem('myNote', JSON.stringify(myNote));
+    if (myNoteEl) {
+      const p = myNote.text.length > 60 ? myNote.text.slice(0, 60).trimEnd() + '…' : myNote.text;
+      myNoteEl.innerHTML = `<span>${p}</span>${myNote.name ? `<br><small style="opacity:0.6; font-size:0.85em; margin-top:8px; display:block;">— ${myNote.name}</small>` : ''}`;
+    }
+    document.getElementById('editArea').style.display = 'none';
+    document.getElementById('editMsg').querySelector('button').textContent = 'edit your note';
+    fetch('/api/notes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: myNoteId, ...myNote }),
+    });
+  }
+
+  function toggleEdit() {
+    const area = document.getElementById('editArea');
+    const btn = document.getElementById('editMsg').querySelector('button');
+    if (area.style.display === 'none') {
+      area.style.display = 'flex';
+      btn.textContent = 'cancel';
+    } else {
+      area.style.display = 'none';
+      btn.textContent = 'edit your note';
+    }
+  }
+
+  document.getElementById('noteInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') addNote();
+  });
+
+  // ===== TABS =====
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.querySelector(`.tab-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+    });
+  });
+
+  // ===== ACTIVITY DATA =====
+  const activities = {
+    home: [
+      {
+        emoji: '🎒', colour: 'green', title: 'The Bag of Everything',
+        preview: 'iPod. camera. wallet. keys. phone. five things that are now one thing.',
+        body: 'Going out meant packing properly. iPod for music, charged and loaded with the right playlist. Actual camera if you wanted photos. Wallet with real cash because most places didn\'t take card. Phone just to call people. Keys. All separate. All things you could forget. You double checked your pockets before leaving the house and it took a moment because there was actually a lot to check. Your phone now does every single one of these things. One rectangle replaced the whole bag.',
+      },
+      {
+        emoji: '📺', colour: 'yellow', title: 'Saturday Morning TV',
+        preview: 'up at 7am voluntarily. pyjamas all morning. not moving for any reason.',
+        body: 'No YouTube. No Netflix. No catch-up. If you missed it, it was gone forever. So you set an alarm for Saturday morning, earlier than any school day, because SM:TV Live and Live & Kicking started at 7. You\'d lie on the floor in your pyjamas, eating cereal, not moving until at least noon. The shows were live, only on right now, and everyone at school on Monday would be talking about what happened. You had to be there.',
+        how: 'There\'s something that doesn\'t exist anymore: the specific feeling of watching TV that you knew was only on right now, in this moment, and nowhere else. You were present for it because you had no choice. It felt different.'
+      },
+      {
+        emoji: '🎩', colour: 'pink', title: 'Ask Jeeves (not Google)',
+        preview: 'before google there was a butler called jeeves. you asked him things. he tried.',
+        body: 'Before Google existed, the search engine everyone used was Ask Jeeves. A cartoon butler who you asked questions in plain English. "What is the tallest mountain?" and Jeeves would find you an answer. It worked maybe half the time. Google came along in the early 2000s and absolutely destroyed him. Jeeves was retired in 2006. The site became Ask.com and nobody cared. Googling things felt like a superpower the first time you did it properly. Before that, finding anything online was a genuine mission.',
+      },
+      {
+        emoji: '🐣', colour: 'green', title: 'Tamagotchi',
+        preview: 'a pixelated pet on a keychain. it needed feeding. it died in double maths.',
+        body: 'Before phones had games, before apps existed, this was the closest thing to a digital companion. A small egg-shaped plastic device with a tiny LCD screen and three buttons. Inside was a pixel creature you fed, played with, cleaned up after, and treated when it got sick. It beeped when it needed you. Schools banned them immediately. You brought it anyway, hid it in your blazer, fed it between lessons. It died in double maths. You were genuinely devastated.',
+        how: 'The grief when a Tamagotchi died wasn\'t fake. It had a name. You\'d had it for weeks. When it died there was a little grave on the screen. People needed actual time to get over it. The replacement was never the same.'
+      },
+      {
+        emoji: '📀', colour: 'blue', title: 'Watching the Same DVD',
+        preview: 'six DVDs total. one favourite. every line memorised. you became the film.',
+        body: 'There was no Netflix. No streaming. You owned maybe six DVDs. Your favourite one you watched until you knew it completely, every line, every pause, the exact moment the music swells. You\'d watch it with anyone who hadn\'t seen it as though you were showing them something rare and sacred. You quoted it constantly. It became part of how you thought.',
+        how: 'When you can only watch six things, you watch them properly. You notice stuff. The film becomes yours in a way that\'s different from something you watched once on a platform and forgot about. You still know every word.'
+      },
+      {
+        emoji: '🥣', colour: 'orange', title: 'Reading the Cereal Box',
+        preview: 'nothing else to read at breakfast. read the riboflavin content twice.',
+        body: 'No phone at the table. No scrolling through TikTok while eating. You\'re at breakfast and the only thing to read is the cereal box. So you read it. Front, already know it. Back, competitions, tokens, games. Nutritional panel. Ingredients. Small print on the prize draw (closing date 31st March, you\'ve missed it). Address to write to if unsatisfied. You put it down. You pick it up. You read it again. This was a normal morning.',
+        how: 'A full generation grew up knowing what riboflavin was and how much iron was in a bowl of Coco Pops. This knowledge has never been useful to any of them since.'
+      },
+      {
+        emoji: '😶', colour: 'purple', title: 'Getting Actually Bored',
+        preview: 'nothing to do. no device to stop the nothing. just... the nothing.',
+        body: 'No phone to pick up. No TikTok to open. No notifications. TV off, friends unavailable, books already read. You lie on your bed and stare at the ceiling. Your brain protests for a while, it wants input, it wants something. Then it gives up and goes quiet. And in that quiet, something odd happens. You start actually thinking. A long, wandering thought. An idea. You get up and do something you hadn\'t planned to do. That was the whole process.',
+        how: 'Most people who grew up without smartphones will tell you: the best ideas came from being bored. Not bored and scrolling, actually bored, with nothing happening. The brain does something in that silence that it doesn\'t get to do anymore.'
+      },
+      {
+        emoji: '🫖', colour: 'yellow', title: 'Pretend Tea Parties',
+        preview: 'plastic cups. imaginary cake. full formal invitation required.',
+        body: 'You set out the plastic tea set on a little cloth and invited everyone, friends, siblings, dolls, the family cat if it would cooperate. Some doll got married. Some doll had a baby. The living room corner became a full house with rooms and rules and assigned roles. You argued about who was the mum. The tea was imaginary but the drama was completely real. Adults walked past and pretended not to notice.',
+      },
+      {
+        emoji: '🚗', colour: 'orange', title: 'The Weekend Outing',
+        preview: 'dad driving. no destination announced. everyone in the back seat.',
+        body: 'Dad said get your shoes on and that was it, no further information. You\'d pile into the car, no seatbelt arguments you\'d already lost, and just go. A garden centre. A park you\'d been to a hundred times. Somewhere completely random. No phones to check, no one posting where you were, no looking anything up. Just the drive, the windows, your siblings annoying you, and mum with the A-Z on her lap. You got home and it had been the whole day somehow.',
+      },
+      {
+        emoji: '📓', colour: 'purple', title: 'Writing Your Diary',
+        preview: 'glitter pens. lock and key. writing what actually happened. mostly.',
+        body: 'You had a diary, a proper one, decorated on the outside, sometimes with a little lock and a tiny key you kept hidden somewhere clever. You wrote in it with your best pens, gel pens, glitter pens, different colours for different moods. What happened that day, who said what, who you liked, what was unfair. Every entry treated like it mattered. Sometimes you\'d write a story in it instead, main character suspiciously similar to you but cooler. Finding one of those diaries years later and reading it is one of the most nostalgic things you can do. A physical record of who you were, in your own handwriting, that today\'s kids simply won\'t have.',
+      },
+      {
+        emoji: '🌸', colour: 'yellow', title: 'Making "Perfume"',
+        preview: 'rose petals. water. sunshine. smelled terrible. given as gift anyway.',
+        body: 'You collect petals from the garden, roses, mainly. You crush them a bit, pack them in a jar, pour water over them, leave it in the sun for a few days. You check it hopefully every afternoon. When you finally smell it, the scent is mostly just fermented flower water, not great. You pour it into a smaller bottle, write a label, and give it to your mum as a present. She always said it was lovely.',
+      },
+      {
+        emoji: '📸', colour: 'orange', title: 'Photo Albums & Collages',
+        preview: 'actual printed photos. stuck on walls. frames made by hand. still there.',
+        body: 'Photos got printed. You held them in your hand, stuck them in albums with little corner mounts, wrote dates and names underneath. You cut them up for collages, made frames out of cardboard and paint, stuck them in your diary next to the entry from that day. Those albums still exist. You can pull one out right now and every photo means something because there were only 24 on the roll and you chose every single one. Not lost in a phone with ten thousand others you\'ll never look at again.',
+      },
+      {
+        emoji: '🌼', colour: 'green', title: 'Pressing Flowers & Scrapbooks',
+        preview: 'flowers between book pages. ticket stubs. photos. memories stuck down forever.',
+        body: 'You pick flowers from the garden or on a walk and press them flat between the heaviest books you can find. Leave them for weeks. When you come back they\'re thin and papery and perfect. They go in a scrapbook alongside everything else worth keeping, cinema tickets, birthday cards, a photo from a disposable camera, a note someone passed you. The scrapbook becomes a record of your life that no cloud storage can replicate.',
+      },
+      {
+        emoji: '🎭', colour: 'blue', title: 'Putting On Shows',
+        preview: 'parents charged entry. rehearsals lasted weeks. show lasted 8 minutes.',
+        body: 'You wrote it, you cast it, you rehearsed it in the bedroom with total seriousness. Made tickets out of torn paper. Charged the adults 10p each to sit on the sofa. The actual show was a mix of lip-syncing, badly remembered magic tricks, at least one dance routine, and probably a sketch that made no sense to anyone watching. Took bows. Multiple bows. The audience always clapped properly.',
+      },
+      {
+        emoji: '📚', colour: 'pink', title: 'The Book Collection',
+        preview: 'begged for every book. shelves rammed. read them all twice.',
+        body: 'Every time you went anywhere near a shop, a supermarket, a car boot sale, a charity shop, you clocked the book section and started working on your parents. You needed it. This one specifically. Your shelves filled up with series you collected obsessively, Goosebumps, Animorphs, Point Horror, Jacqueline Wilson. You knew exactly which ones you had and which ones were missing. A new book on a rainy afternoon was one of the best feelings there was.',
+      },
+      {
+        emoji: '🌧️', colour: 'blue', title: 'Rainy Day Summer',
+        preview: 'summer rain. adults moaning. you: outside immediately.',
+        body: 'When it rained in summer the adults all groaned and closed the windows. You and your siblings went outside. You stood in it. You ran through it. You jumped in every puddle you could find. You got absolutely soaked and didn\'t care even slightly. Coming back inside dripping everywhere, mum losing her mind, was half the fun.',
+      },
+      {
+        emoji: '💿', colour: 'blue', title: 'Burning CDs',
+        preview: 'windows media player. 74 minutes. this playlist has to be perfect.',
+        body: 'Before Spotify, if you wanted music in the car you made it yourself. You sit at the family computer, open Windows Media Player or Nero, and agonise over the order, the running time, whether to put the slow ones at the end. Burn it, write the title on the disc in marker pen, slide it into a case. That CD plays on repeat the entire summer.',
+      },
+      {
+        emoji: '📼', colour: 'orange', title: 'Making Mixtapes',
+        preview: 'blank cassette. radio on. finger hovering over record. do not breathe.',
+        body: 'Before Spotify existed, if you wanted to listen to a song whenever you wanted, you had to catch it on the radio and record it yourself. You put a blank cassette in the tape deck and you wait. The chart show comes on, usually Sunday afternoon. Your song starts playing and you slam PLAY and RECORD at the exact same time. The mission: get the whole song with no DJ talking over it. You almost never managed it. You played the tape until it wore out anyway.',
+      },
+      {
+        emoji: '🛋️', colour: 'pink', title: 'The Indoor Den',
+        preview: 'every cushion off every sofa. every blanket in the house. mum was not happy.',
+        body: 'You pulled every cushion off every sofa, dragged every blanket you could find, and built a structure across the living room using chairs, the coffee table, and pure determination. It took about an hour to build. It was magnificent. You were in there maybe 20 minutes before your mum walked in, saw the state of the room, and told you to put it all back right now. You negotiated for five more minutes. You got two.',
+      },
+      {
+        emoji: '🎨', colour: 'green', title: 'The Art Corner',
+        preview: 'colouring pencils. poster paint. your drawings stuck on the wall like they belonged in a gallery.',
+        body: 'There was a corner, or a table, or just a patch of floor that was yours for drawing. Colouring pencils, felt tips, poster paint in those little plastic pots. You made things, finished them, and they went straight on the wall, stuck with Blu-Tack. Every single one treated like it deserved to be in a museum. Your parents pointed them out to visitors. You pretended to be embarrassed. You were not embarrassed.',
+      },
+      {
+        emoji: '📝', colour: 'yellow', title: 'Round Robin Letters',
+        preview: 'one letter. eight people. took three months. arrived back full of gossip.',
+        body: 'No WhatsApp group. No group chat. If you wanted everyone to know your news, you wrote it on paper and posted it. A letter travels to one friend, they add their bit, post it to the next, and so on round the group. It comes back to you months later, thick with different handwriting, news, jokes, drawings, arguments. Reading your own section from months ago was like getting a message from a past version of yourself.',
+        how: 'When it finally came back you\'d completely forgotten what you wrote originally. Reading it was like getting a letter from yourself from months ago. The whole thing took the time of a long project just to complete one lap. Nobody does this. Someone should.'
+      },
+    ],
+    outside: [
+      {
+        emoji: '🎯', colour: 'green', title: 'Kerby',
+        preview: 'stand on opposite kerbs. throw a ball at the edge. that\'s literally it.',
+        body: 'So basically two of you stand on opposite sides of a quiet street, one person on each kerb. You throw a tennis ball and try to hit the sharp edge of the kerb on the other side. If it bounces cleanly back to you, you score and throw again. If it doesn\'t, the other person grabs it and goes. No app. No screen. Just a ball and some maths about angles.',
+        how: 'When you hit the edge perfectly it makes this incredibly satisfying thwack and the ball shoots back like magic. You could do this for two hours straight without noticing.'
+      },
+      {
+        emoji: '🏚️', colour: 'yellow', title: 'Building Dens',
+        preview: 'sticks. old curtains. no planning permission. full commitment.',
+        body: 'You find a spot, behind the shed, in some woods, under the stairs, and you claim it. You drag branches, old blankets, cardboard, rope, whatever you can find. You build a structure that definitely won\'t survive rain. It doesn\'t matter. It has a name. It has rules about knocking before you enter. It is yours.',
+        how: 'The inside of a den, even a terrible one made of cardboard and a broken umbrella, felt completely different from the outside world. That was the whole point. You built a place that was only for you.'
+      },
+      {
+        emoji: '🏃', colour: 'pink', title: 'British Bulldog',
+        preview: 'banned at basically every school. for good reason.',
+        body: 'One person stands in the middle of a big open space. Everyone else lines up at one end. On the shout, you all sprint to the other side. The person in the middle has to grab someone and hold them still long enough to shout "British Bulldog 1-2-3!" That person joins the middle. It keeps going until one person is left. Pure, chaotic, physical carnage.',
+        how: 'This got banned at most schools in the 90s because someone always got hurt. Everyone still played it. You just moved the game away from where teachers could see. The ban made it better somehow.'
+      },
+      {
+        emoji: '🌰', colour: 'blue', title: 'Conkers',
+        preview: 'a horse chestnut on a string. genuinely competitive. weirdly violent.',
+        body: 'Every autumn, you find the best horse chestnut you can, big, solid, perfectly round. You drill a hole through it, thread a shoelace. Then you face someone else with their conker. You take turns swinging to smash the other one. If yours survives and theirs breaks, yours becomes a "oner". Beat another conker and it\'s a "two-er". The number climbs. The glory grows.',
+        how: 'People had theories. Soak it in vinegar. Bake it in the oven. Keep it from last year. Everyone had a method. Everyone swore it wasn\'t cheating. It was definitely cheating.'
+      },
+      {
+        emoji: '⚽', colour: 'orange', title: 'Jumpers for Goalposts',
+        preview: 'no pitch. no ref. no problem. somehow the best football.',
+        body: 'Any bit of flat ground worked, a park, a cul-de-sac, someone\'s back garden. Two jumpers down at each end = goalposts. Teams were never equal. Pitch size was never agreed. Rules were roughly football but open to very loud interpretation at every moment. "That was in!" "It went over the jumper!" Someone\'s parent eventually appeared. The game moved.',
+        how: 'Scorelines reached 17-14. Matches lasted until it was too dark to see the ball. Nobody kept official track. Everyone remembered it differently. All versions were correct.'
+      },
+      {
+        emoji: '🔵', colour: 'purple', title: 'Marbles',
+        preview: 'tiny glass spheres. serious playground economy. actual grief when you lost one.',
+        body: 'You draw a circle in the dirt. Everyone puts some marbles inside. Then you take turns flicking your shooter marble from the edge, the goal is to knock other marbles out of the ring. Any marble you knock out is yours to keep. The big swirly glass ones were called different things at different schools. All names meant the same thing: don\'t let anyone take it.',
+        how: 'Marble collections lived in a cloth drawstring bag. The weight and sound of it was satisfying in a way that\'s hard to explain. Losing your best one was a real loss. Some kids never got over it.'
+      },
+      {
+        emoji: '🐺', colour: 'yellow', title: "What's the Time Mr Wolf?",
+        preview: 'one wolf. everyone else creeping closer. genuinely tense.',
+        body: 'One person is Mr Wolf and stands at one end with their back turned. Everyone else lines up at the other end. You all call out "What\'s the time Mr Wolf?" and the wolf shouts a time, "3 o\'clock!", and you take 3 steps forward. You keep going, getting closer and closer, until the wolf shouts "DINNER TIME!" and turns and chases everyone. Get caught, you\'re the wolf.',
+        how: 'The tension as you crept closer was completely real even though you knew what was coming. When "Dinner Time!" hit it still made everyone scream and run. Every single time.'
+      },
+      {
+        emoji: '🏰', colour: 'yellow', title: 'Sand & Mud Architecture',
+        preview: 'waiting for the bus. found some dirt. built a whole city.',
+        body: 'Waiting for the school van or bus, you\'d find a patch of sand or loose dirt and just start. A little wall here, a road, a house, a moat. You\'d add rooms, a garden, a gate made from two sticks. Other kids waiting would crouch down and add their bit. By the time the van pulled up you had something you were genuinely proud of and had to immediately abandon. You never photographed it. It just existed for those twenty minutes and then it was gone.',
+      },
+      {
+        emoji: '🔔', colour: 'pink', title: 'Knock Down Ginger',
+        preview: 'ring the bell. run. hide. do not breathe. do not laugh.',
+        body: 'On a quiet afternoon when the street was dead, you picked a door. Rang the bell. Ran as fast as you could and hid behind a wall or a parked car, absolutely silent, absolutely dying of laughter. You watched through a gap as someone opened the door, looked out, looked confused, went back inside. The relief and the hysteria hit at exactly the same time. At night it was ten times better and ten times more terrifying. You always said you\'d stop after one. You never stopped after one.',
+      },
+      {
+        emoji: '⚽', colour: 'yellow', title: 'Street Football & Cricket',
+        preview: 'jumpers for goalposts. lamp post for stumps. cars were an obstacle not a problem.',
+        body: 'The street was the pitch. Jumpers down for goalposts, lamp post for cricket stumps, a chalked crease on the pavement. You played until someone hit a window or a car came and you had to move everything. Someone always had a different set of rules. Arguments happened constantly. They were resolved immediately and the game carried on. No ref, no proper kit, no booking a court. Just show up and play until it got dark.',
+      },
+      {
+        emoji: '🍬', colour: 'orange', title: 'The Corner Shop Run',
+        preview: 'one pound. infinite decisions. paper bag of penny sweets.',
+        body: 'You were handed a bit of money and sent, or you went yourself, to the corner shop. The penny sweet section took at least ten minutes. Foam shrimps, cola bottles, white mice, flying saucers, sour worms. You pointed at each one individually. The shopkeeper filled the bag with the patience of a saint. You walked home eating some on the way, rationing the rest, sometimes hiding them from your siblings, sometimes sharing the whole bag in five minutes flat and immediately regretting it.',
+      },
+      {
+        emoji: '🚲', colour: 'green', title: 'Riding Bikes Nowhere',
+        preview: '"be back before dark." that was it. no maps. no contact. just go.',
+        body: 'No Google Maps. No phone to call for a lift. No way for your parents to track you. You got on your bike and you went. No destination, no route planned, maybe 20p in your pocket for a Freddo. You\'d find somewhere new, go somewhere you\'d never been, just to see what was there. Entire afternoons disappeared. You came back when it got dark. That was the full arrangement and it worked fine for decades.',
+        how: 'This sounds terrifying now but it was just normal. Every kid did it. You learned your area, figured out your own limits, and came home fine. Nobody had a phone to track you. Nobody needed one.'
+      },
+    ],
+    mates: [
+      {
+        emoji: '🔮', colour: 'yellow', title: 'Fortune Teller',
+        preview: 'a folded bit of paper that predicted your entire future. obviously.',
+        body: 'You fold a square of paper into a specific shape, four flaps that open and close when you put your fingers inside. Write colours on the outside, numbers under those, fortunes under the numbers. Someone picks a colour, you count it out opening and closing the paper, then a number, then the fortune is revealed. The person holding it completely controlled what you got. Everyone knew this. Nobody said it.',
+      },
+      {
+        emoji: '🪡', colour: 'orange', title: 'Friendship Bracelets',
+        preview: 'took weeks. tied on a friend\'s wrist. never allowed to come off.',
+        body: 'You spend several evenings knotting coloured embroidery thread into a striped bracelet. When it\'s done you tie it onto a friend\'s wrist. The rule: it cannot come off until it falls off on its own. Taking it off early was considered genuinely bad luck and also a bit rude. The more colours, the more complex the pattern, the more impressed everyone was.',
+      },
+      {
+        emoji: '🤲', colour: 'pink', title: 'Clapping Games',
+        preview: 'complex hand sequences. chanted rhymes. somehow every kid just knew them.',
+        body: 'You face a partner and do a sequence of claps, your own hands, their hands, cross-clap, knee-slap, all in rhythm to a chanted rhyme. The sequence gets faster as the rhyme repeats. Some had three-person versions. The weird thing is nobody seemed to teach them, kids just knew them. They passed between schools and generations without anyone being in charge of it.',
+        how: 'If you knew one of these you still know it now, somewhere in your hands. The body remembers this stuff even when the brain forgets. Try clapping the rhythm out loud. It\'ll come back.'
+      },
+      {
+        emoji: '📜', colour: 'green', title: 'Passing Notes in Class',
+        preview: 'folded into a tiny triangle. smuggled down the row. usually caught.',
+        body: 'No texting. No WhatsApp. If you needed to say something to someone in the same room, you wrote it on paper. Tiny piece, folded into the tightest triangle you could manage, passed hand to hand along the row under the desk. The teacher almost always saw. They either confiscated it and read it out loud to the class, genuinely the worst outcome possible, or they let it go. Both outcomes are permanently stored in everyone who was there.',
+        how: 'The triangle fold was important, it held closed without tape. Some people developed incredible folding techniques. This was a skill taken seriously. The messages inside were always about who fancied who.'
+      },
+      {
+        emoji: '📄', colour: 'green', title: 'Paper Games at Break',
+        preview: 'torn exercise book page. noughts and crosses. serious tournament energy.',
+        body: 'A scrap of paper and a pen was enough for a full break time. Noughts and crosses ran in tournaments with brackets. Boxes, you took turns drawing lines and tried to complete squares, got genuinely competitive. MASH told you who you were going to marry and where you\'d live. The fortune teller folded from a single page had everyone crowding round. A torn scrap of paper and the fifteen minutes before the bell rang. That was enough.',
+      },
+      {
+        emoji: '📓', colour: 'blue', title: 'End of Year Autograph Books',
+        preview: 'everyone signs. teachers write poems. you read it every summer after.',
+        body: 'Everyone had a personal diary. Covered in cartoon characters, decorated with stickers, some with a little lock and a tiny key you kept hidden. Completely private, completely yours. And then at the end of the school year you\'d pass it round for everyone to sign. Not just a name, a proper message. Mates wrote jokes and inside references. Teachers wrote little poems in neat handwriting. Some people drew pictures. You spent days collecting them, then read every page over the summer.',
+      },
+      {
+        emoji: '✏️', colour: 'pink', title: 'Handwritten Notes & Book Scribbles',
+        preview: 'borrowed textbook. someone\'s notes inside. felt like finding treasure.',
+        body: 'You wrote everything by hand. Notes from the board, copied out in your neatest writing, underlined in different colours, little stars next to the important bits. Textbooks passed down through years had someone else\'s scribbles already in the margins, doodles, corrections, the occasional rude comment, and sometimes, if you were lucky, a note from someone who liked you and had absolutely no other way of reaching you. Your own exercise books became a record of your handwriting changing year by year. There was something about writing it out that made it stick in a way that typing never quite does.',
+      },
+      {
+        emoji: '🪑', colour: 'purple', title: 'Storytime with the Teacher',
+        preview: 'teacher too tired for the lesson. everyone sensing the opportunity.',
+        body: 'Sometimes a teacher would put the books away and just talk. A story with a lesson in it, something from their life or just something they felt was worth saying. About growing up, about choices, about how things turn out. And you genuinely listened. Someone asked a question, they answered it properly, more questions followed. The whole class leaning in, actually curious. You learned nothing on the syllabus that lesson. You remembered it for years.',
+      },
+      {
+        emoji: '🍎', colour: 'orange', title: 'The Favourite Teacher Gift',
+        preview: 'handmade card. cut out bits from magazines. meant every word.',
+        body: 'You had a favourite teacher and they absolutely knew it. End of year, or their birthday, or just because, you made them something. A card with your best handwriting inside, a proper written message not just a signature. Decorated with cuttings from magazines, stickers, little drawings. Maybe a bookmark you made yourself. You spent actual time on it. When you gave it to them and they said they loved it, you believed them. Some of those teachers kept those cards for years.',
+      },
+      {
+        emoji: '🍱', colour: 'yellow', title: 'The Food Party',
+        preview: 'notepad. felt tip. table plan. everyone brings something. fully catered.',
+        body: 'Someone had a notepad, ideally a cute one with kittens or flowers on it, and they became the planner. Full event design on paper. Who was bringing what, which crisps, which biscuits, who was doing squash. Everyone went home the night before, asked their mum to make something or packed whatever they could find. Someone always turned up with a little box of their mum\'s home cooked food and that was the highlight. Lunch tables pushed together. Everyone\'s contributions laid out. School became a proper occasion for one afternoon.',
+      },
+      {
+        emoji: '🤔', colour: 'purple', title: 'The Argument Nobody Could Win',
+        preview: 'who sang that song. what year was that film. no one could look it up.',
+        body: 'Someone said something. Someone else said that was wrong. Nobody could prove it either way because there was no way to look it up on the spot. So you just argued. For ages. Everyone was completely certain, nobody had any evidence. The debate would run for the whole afternoon and either fizzle out or carry on the next day at school. Sometimes you never found out the answer. The argument just ended eventually. You\'d find out years later that you were wrong.',
+      },
+      {
+        emoji: '🕖', colour: 'blue', title: 'Meeting at 7. Actually at 7.',
+        preview: 'meet at the precinct at 7. no phone. no update. just be there.',
+        body: 'You agreed a time and a place and that was it. Meet outside Woolworths at half six. No way to say you were running late. No way to check if they\'d left. If you weren\'t there, they waited a bit, then left without you. That was the deal. So you were there. Everyone was. The plan was the plan and it held because it had to. Somehow this worked perfectly for decades.',
+      },
+      {
+        emoji: '🍕', colour: 'orange', title: 'Ordering a Takeaway',
+        preview: 'no app. no menu online. you needed the actual leaflet or you were stuck.',
+        body: 'To order a pizza you needed their paper menu with the phone number on it. If you\'d thrown it away, you had to find them in the phone book and order completely blind because you couldn\'t look up what they served. No Deliveroo, no Just Eat, no tracking your order on a map. You rang, you read your order out to a person, you were told twenty minutes, and then you just waited and hoped. The leaflet through the door was genuinely useful.',
+      },
+      {
+        emoji: '🚪', colour: 'yellow', title: 'Just Showing Up',
+        preview: 'no text. no call. just knock and see what happens.',
+        body: 'You wanted to see your mate so you went round. No text ahead, no "you free?", no coordination whatsoever. You knocked on the door and waited. Sometimes they were in. Sometimes they weren\'t. Sometimes they were grounded because of a maths test and couldn\'t come out. You just had to roll with it. The whole thing was completely unplanned and somehow that was fine. Nobody found this strange.',
+      },
+      {
+        emoji: '☎️', colour: 'green', title: 'Calling Mates on the Landline',
+        preview: 'their mum answered. you had to be polite. then their dad. then their nan.',
+        body: 'You wanted to speak to your mate. You picked up the family phone in the hallway and dialled their home number, which you knew by heart. Their mum answered. You said "hello Mrs so-and-so, is such-and-such there please?" Very politely. Sometimes their dad answered instead. Sometimes a sibling who went to get them extremely slowly. The whole family knew you were calling. There was no privacy. You had this conversation in the hallway with everyone in earshot.',
+      },
+      {
+        emoji: '🐍', colour: 'orange', title: 'Planning Harmless Pranks',
+        preview: 'fake spider. whoopee cushion. days of planning. thirty seconds of chaos.',
+        body: 'You spent more time planning the prank than the prank actually lasted. Fake rubber spiders placed on chairs. Whoopee cushions slid under cushions. Clingfilm over the toilet seat. A fake snake in someone\'s bag. You\'d brief your accomplices in hushed voices, assign positions, decide who would distract and who would place it. The buildup was everything. The reaction lasted about five seconds. You talked about it for the rest of term.',
+      },
+      {
+        emoji: '📞', colour: 'blue', title: 'Prank Calls',
+        preview: 'the house phone. a random number. a scripted line. you hang up immediately.',
+        body: 'No caller ID. No way to block a number. No record of who called. You picked up the shared landline in the hallway, dialled a random number or a prepared target, delivered your scripted line, and hung up immediately before they could respond. The anonymity was total. You could be anyone. You could be nowhere. The person on the other end had absolutely no way of knowing who you were..',
+        how: 'This whole era ended when 1471 became a thing. You could ring back and find out who\'d called. Suddenly prank calls had consequences. The golden age was over by about 1994.'
+      },
+      {
+        emoji: '🔐', colour: 'orange', title: 'Secret Clubs',
+        preview: 'two to four members. no clear purpose. absolutely mandatory handshake.',
+        body: 'You form a club. It has a name, something like The Shadow Force or Extreme Squad. There\'s a notebook with rules written in it. There\'s a secret handshake with at least five steps. There are roles: President, Vice President, Secretary (the secretary never did anything). You hold meetings. You discuss enemies, plans, future operations. You complete none of them.',
+        how: 'Everyone vaguely knew the club existed. The secrecy was a performance. Rejecting someone\'s application for membership was the single most power you felt all year.'
+      },
+      {
+        emoji: '🪃', colour: 'purple', title: 'French Skipping',
+        preview: 'a loop of elastic. three people. chanting compulsory. impossibly good.',
+        body: 'Two people stand inside a long elastic loop stretched around their ankles, facing each other. The third person jumps a specific sequence between and over the elastic, in, out, side, on, while chanting "England, Ireland, Scotland, Wales, inside, outside, inside, ON." Complete it without catching your foot: elastic moves up to knees. Then hips. Then waist. Then armpits. Each level harder. And apparently every country in the world had their own version of this, different chant, same elastic, same chaos.',
+        how: 'If you played this as a kid you still know the sequence. It\'s in there. The chanting wasn\'t optional, the rhythm was how you kept time. Messing up was fine. You just swapped and tried again.'
+      },
+      {
+        emoji: '💬', colour: 'pink', title: 'Chinese Whispers',
+        preview: 'one sentence in. something completely unrecognisable comes out. every time.',
+        body: 'Sit in a circle or a line. The first person whispers a sentence once into the next person\'s ear. That person passes it on. No repeating, no clarifying. The last person says out loud what they heard. Then you compare it to the original. "The quick brown fox jumped over the fence" has usually become something involving someone called Brian and a crisp.',
+        how: 'The funniest endings always had something slightly inappropriate in them that definitely wasn\'t in the original. Nobody ever admitted putting it there. It just appeared. Every time. Without fail.'
+      },
+      {
+        emoji: '🎭', colour: 'green', title: 'Truth or Dare',
+        preview: 'everyone picked dare. all the dares involved knocking on someone\'s door.',
+        body: 'You sit in a group. One person asks another: Truth or Dare? Truth meant answering honestly, usually "do you fancy anyone in this group?" Dare meant doing something embarrassing, running to the end of the road and back, knocking on a stranger\'s door and asking for a glass of water, eating something rank. Everyone always picked dare. The dares always escalated.',
+        how: 'The truths were the actual point. The dares were just cover so you could have the conversation about who fancied who without it being weird. It was socially very efficient. Nobody realised this at the time.'
+      },
+    ]
+  };
+
+  // Render notes into their containers
+  Object.entries(activities).forEach(([cat, items]) => {
+    const container = document.getElementById('notes-' + cat);
+    if (!container) return;
+    items.forEach((item, i) => {
+      const div = document.createElement('div');
+      div.className = `note ${item.colour}`;
+      div.innerHTML = `
+        <span class="note-emoji">${item.emoji}</span>
+        <span class="note-title">${item.title}</span>
+        ${item.preview}
+        <span class="tap-hint">tap to read ↗</span>
+      `;
+      div.addEventListener('click', () => openModal(item, div.className));
+      container.appendChild(div);
+    });
+  });
+
+  // ===== MODAL =====
+  function openModal(item, noteClass) {
+    const colourMatch = noteClass.match(/note (\w+)/);
+    const colour = colourMatch ? colourMatch[1] : 'yellow';
+    const colourMap = {
+      yellow: '#FFF176', pink: '#F48FB1', green: '#A5D6A7',
+      blue: '#90CAF9', orange: '#FFCC80', purple: '#CE93D8'
+    };
+    document.getElementById('modalEmoji').textContent = item.emoji;
+    document.getElementById('modalTitle').textContent = item.title;
+    document.getElementById('modalBody').textContent = item.body;
+    document.getElementById('noteModalCard').style.background = colourMap[colour] || '#FFF176';
+    const modal = document.getElementById('noteModal');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('noteModal').classList.remove('open');
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+  }
+
+  document.getElementById('noteModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // ===== RANDOM TINY GRAFFITI MARKS (extra life) =====
+  const scrawls = document.querySelectorAll('.scrawl');
+  const tags = [
+    'woz ere', '4eva', 'ur mum', 'no wifi = no life??',
+    '© boredom', 'help', 'send snacks', 'it is what it is',
+    'no cap', 'slay', 'lowkey bored', 'not gonna lie',
+    'mid', 'touch grass', 'rent free', 'understood the assignment',
+    'main character', 'based', 'this is giving nothing', 'delulu',
+  ];
+  // sprinkle scrawls along the edges of the wall, not in the content
+  const wallEl = document.querySelector('.wall');
+  const positions = [
+    { top: '6%',  left: '1%',  rotate: -5 },
+    { top: '6%',  right: '1%', rotate: 4 },
+    { top: '22%', left: '1%',  rotate: -3 },
+    { top: '22%', right: '1%', rotate: 6 },
+    { top: '40%', left: '1%',  rotate: -7 },
+    { top: '40%', right: '1%', rotate: 3 },
+    { top: '60%', left: '1%',  rotate: 5 },
+    { top: '60%', right: '1%', rotate: -4 },
+    { top: '80%', left: '1%',  rotate: -6 },
+    { top: '80%', right: '1%', rotate: 4 },
+  ];
+  // shuffle and pick without repeating
+  const shuffled = tags.sort(() => Math.random() - 0.5);
+  positions.forEach((pos, i) => {
+    const s = document.createElement('div');
+    s.className = 'scrawl wall-scrawl';
+    s.style.position = 'fixed';
+    s.style.top = pos.top;
+    if (pos.left)  s.style.left  = pos.left;
+    if (pos.right) s.style.right = pos.right;
+    s.style.transform = `rotate(${pos.rotate}deg)`;
+    s.style.pointerEvents = 'none';
+    s.style.zIndex = '5';
+    s.textContent = shuffled[i];
+    document.body.appendChild(s);
+  });
+</script>
+
+</body>
+</html>
