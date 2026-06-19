@@ -716,8 +716,27 @@
     div.style.fontSize = '1.2rem';
     div.style.cursor = 'pointer';
     const preview = text.length > 60 ? text.slice(0, 60).trimEnd() + '…' : text;
-    const nameHtml = name ? (item.nameUrl ? `<a href="${item.nameUrl}" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">${name}</a>` : name) : '';
-    div.innerHTML = `<span>${preview}</span>${name ? `<br><small style="opacity:0.6; font-size:0.85em; margin-top:8px; display:block;">— ${nameHtml}</small>` : ''}`;
+    const span = document.createElement('span');
+    span.textContent = preview;
+    div.appendChild(span);
+    if (name) {
+      const small = document.createElement('small');
+      small.style.cssText = 'opacity:0.6; font-size:0.85em; margin-top:8px; display:block;';
+      small.textContent = '— ';
+      if (item.nameUrl) {
+        const a = document.createElement('a');
+        a.href = item.nameUrl;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.style.cssText = 'color:inherit; text-decoration:underline;';
+        a.textContent = name;
+        small.appendChild(a);
+      } else {
+        small.appendChild(document.createTextNode(name));
+      }
+      div.appendChild(document.createElement('br'));
+      div.appendChild(small);
+    }
     div.addEventListener('click', () => {
       openModal({ emoji: '📝', title: name || '', body: text }, div.className);
     });
@@ -781,8 +800,18 @@
     myNote = { text, name: document.getElementById('editNameInput').value.trim() };
     localStorage.setItem('myNote', JSON.stringify(myNote));
     if (myNoteEl) {
+      myNoteEl.innerHTML = '';
       const p = myNote.text.length > 60 ? myNote.text.slice(0, 60).trimEnd() + '…' : myNote.text;
-      myNoteEl.innerHTML = `<span>${p}</span>${myNote.name ? `<br><small style="opacity:0.6; font-size:0.85em; margin-top:8px; display:block;">— ${myNote.name}</small>` : ''}`;
+      const span = document.createElement('span');
+      span.textContent = p;
+      myNoteEl.appendChild(span);
+      if (myNote.name) {
+        const small = document.createElement('small');
+        small.style.cssText = 'opacity:0.6; font-size:0.85em; margin-top:8px; display:block;';
+        small.textContent = '— ' + myNote.name;
+        myNoteEl.appendChild(document.createElement('br'));
+        myNoteEl.appendChild(small);
+      }
     }
     document.getElementById('editArea').style.display = 'none';
     document.getElementById('editMsg').querySelector('button').textContent = 'edit your note';
