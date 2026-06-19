@@ -1,7 +1,1 @@
-{
-  "functions": {
-    "api/notes.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
-}
+{}
