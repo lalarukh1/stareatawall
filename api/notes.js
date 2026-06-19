@@ -1,7 +1,5 @@
 const REDIS_URL = process.env.UPSTASH_REDIS_REST_URL;
 const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
-const ADMIN_SECRET = process.env.ADMIN_SECRET;
-
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 function escapeHtml(str) {
@@ -35,8 +33,8 @@ async function getRateKey(ip) {
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://stareatawall.org');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-admin-secret');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') return res.status(200).end();
 
@@ -71,17 +69,6 @@ export default async function handler(req, res) {
       name: escapeHtml((name || '').trim().slice(0, 50)),
       created_at: new Date().toISOString(),
     })]);
-    return res.json({ ok: true });
-  }
-
-  // DELETE — admin only, remove a note by id
-  if (req.method === 'DELETE') {
-    if (!ADMIN_SECRET || req.headers['x-admin-secret'] !== ADMIN_SECRET) {
-      return res.status(401).json({ error: 'unauthorised' });
-    }
-    const { id } = req.body || {};
-    if (!id || !UUID_RE.test(id)) return res.status(400).json({ error: 'invalid id' });
-    await redis(['HDEL', 'wall:notes', id]);
     return res.json({ ok: true });
   }
 
